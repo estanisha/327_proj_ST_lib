@@ -51,11 +51,11 @@ std::vector<std::unique_ptr<Smalltalk>> getPeople(int numBrit, int numAmerican,
 	for (int i = 0; i < numBrit + numAmerican + numbAmericanDonutEnthusiest;
 			i++) {
 		if (i < numWatches) {
-			std::unique_ptr<Watch> aWatch = std::unique_ptr<Watch>(new Watch());
-			aVectorOfPeople[i].get()->giveWatch(aWatch);
+			std::unique_ptr<Watch> aWatch(new Watch());
+			aVectorOfPeople[i]->giveWatch(aWatch);
 		}
 		std::unique_ptr<Watch> aWatch = 0;
-		aVectorOfPeople[i].get()->giveWatch(aWatch);
+		aVectorOfPeople[i]->giveWatch(aWatch);
 	}
 	//return your vector
 	return aVectorOfPeople;

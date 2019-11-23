@@ -1,3 +1,10 @@
+/**
+ * Smalltalk_Brit
+ *
+ *  created Nov 2019
+ *  	author: Emily Stanisha
+ */
+
 #include "./includes/Smalltalk_Brit.h"
 #include "./includes/constants.h"
 

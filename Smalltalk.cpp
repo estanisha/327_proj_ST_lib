@@ -1,3 +1,10 @@
+/**
+ * Smalltalk
+ *
+ *  Created Nov 2019
+ *  	author: Emily Stanisha
+ */
+
 #include "./includes/Smalltalk.h"
 #include "./includes/constants.h"
 #include "./includes/Watch.h"
@@ -6,9 +13,7 @@
 using namespace std;
 
 Smalltalk::Smalltalk(std::string myNationality, int iPerson) :
-	nationality(myNationality),
-	iPerson(iPerson),
-	current_phrase(0) {
+		nationality(myNationality), iPerson(iPerson), current_phrase(0) {
 }
 
 Smalltalk::~Smalltalk(void) {
@@ -16,7 +21,7 @@ Smalltalk::~Smalltalk(void) {
 }
 
 std::string Smalltalk::saySomething() {
-	string somethingToSay = mySmallTalk[current_phrase %mySmallTalk.size()];
+	string somethingToSay = mySmallTalk[current_phrase % mySmallTalk.size()];
 	current_phrase++;
 	return somethingToSay;
 }
@@ -41,7 +46,7 @@ std::unique_ptr<Watch> Smalltalk::takeWatch() {
 }
 
 bool Smalltalk::giveWatch(std::unique_ptr<Watch> &pWatch) {
-	if (this->pWatch !=0) {
+	if (this->pWatch != 0) {
 		return false;
 	}
 

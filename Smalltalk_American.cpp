@@ -1,3 +1,10 @@
+/**
+ * Smalltalk_American
+ *
+ *  Created Nov 2019
+ *  	author: Emily Stanisha
+ */
+
 #include "./includes/Smalltalk_American.h"
 #include "./includes/constants.h"
 
@@ -5,7 +12,7 @@ using namespace std;
 
 Smalltalk_American::Smalltalk_American(int iPerson) :
 		Smalltalk_American(AMERICAN, iPerson) {
-	populatePhrases();
+	Smalltalk_American::populatePhrases();
 }
 
 Smalltalk_American::Smalltalk_American(string myNationality, int iPerson) :
