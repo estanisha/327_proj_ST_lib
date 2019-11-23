@@ -48,3 +48,4 @@ bool Smalltalk::giveWatch(std::unique_ptr<Watch> &pWatch) {
 	this->pWatch = move(pWatch);
 	return true;
 }
+

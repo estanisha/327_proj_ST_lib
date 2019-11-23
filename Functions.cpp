@@ -48,6 +48,15 @@ std::vector<std::unique_ptr<Smalltalk>> getPeople(int numBrit, int numAmerican,
 	// when you are finished using the vector you return
 	//from this function(see Smalltalk header for hints)
 
+	for (int i = 0; i < numBrit + numAmerican + numbAmericanDonutEnthusiest;
+			i++) {
+		if (i < numWatches) {
+			std::unique_ptr<Watch> aWatch = std::unique_ptr<Watch>(new Watch());
+			aVectorOfPeople[i].get()->giveWatch(aWatch);
+		}
+		std::unique_ptr<Watch> aWatch = 0;
+		aVectorOfPeople[i].get()->giveWatch(aWatch);
+	}
 	//return your vector
 	return aVectorOfPeople;
 }
